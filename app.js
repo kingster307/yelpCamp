@@ -49,7 +49,7 @@ app.use("/campgrounds/:id/comments", commentsRoutes);
 
 
 
-app.listen(2468,()=>{
-	console.log('yelpCamp server has started');
+app.listen(process.env.PORT || 2468, ()=>{
+	console.log("server started");
 });
 
