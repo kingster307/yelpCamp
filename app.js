@@ -14,7 +14,13 @@ const express 			= require('express'),
 	  campgroundRoutes	= require("./routes/campground"),
 	  indexRoutes		= require("./routes/index");
 
-mong.connect("mongodb://localhost/yelp_camp", { useNewUrlParser: true });
+// mong.connect("mongodb://localhost/yelp_camp", { useNewUrlParser: true });
+mong.connect("mongodb+srv://devsprout:Ascv9632@yelpcamppeterking-rnh0x.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true }).then(()=>{
+	console.log("connected to db");
+}).catch(err=>{
+	console.log(`Error: ${err}`);
+});
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 app.use(express.static(`${__dirname}/public`));
