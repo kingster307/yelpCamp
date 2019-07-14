@@ -14,8 +14,10 @@ const express 			= require('express'),
 	  campgroundRoutes	= require("./routes/campground"),
 	  indexRoutes		= require("./routes/index");
 
+// console.log(process.env.DATABASEURL);
+
 // mong.connect("mongodb://localhost/yelp_camp", { useNewUrlParser: true });
-mong.connect("mongodb+srv://devsprout:Ascv9632@yelpcamppeterking-rnh0x.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true }).then(()=>{
+mong.connect(process.env.DATABASEURL, { useNewUrlParser: true }).then(()=>{
 	console.log("connected to db");
 }).catch(err=>{
 	console.log(`Error: ${err}`);
