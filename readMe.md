@@ -10,4 +10,5 @@
 	* ejs
 	* MVC architecture 
 	* Deployed on heroku 
-	* gzip compression used for performance;
+	* gzip compression used for performance
+	* http://yelpcamppkproject.herokuapp.com
