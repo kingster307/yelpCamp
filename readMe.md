@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # yelpCamp
 
 * Add landing page 
@@ -38,3 +39,16 @@ each campground has
 * security 
 * https://www.udemy.com/the-web-developer-bootcamp/learn/lecture/6142122#questions/2758358
 
+=======
+# yelpCamp class project 
+
+	* mongoose 
+	* node 
+	* passport (for user authentication)
+	* custom middleware 
+	* mongo 
+	* express
+	* ejs
+	* MVC architecture 
+	* deployed on heroku - https://still-depths-51804.herokuapp.com
+>>>>>>> 950c1d7d89059814ce45336ad8875ecb53692281

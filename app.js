@@ -12,8 +12,12 @@ const express 			= require('express'),
 	  commentsRoutes 	= require("./routes/comments"),
 	  methodOverride	= require("method-override"),
 	  campgroundRoutes	= require("./routes/campground"),
+<<<<<<< HEAD
 	  indexRoutes		= require("./routes/index")
 	  compression 		= require('compression');
+=======
+	  indexRoutes		= require("./routes/index");
+>>>>>>> 950c1d7d89059814ce45336ad8875ecb53692281
 
 let url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
 mong.connect(url, { useNewUrlParser: true }).then(()=>{
@@ -28,7 +32,10 @@ app.use(express.static(`${__dirname}/public`));
 app.use(methodOverride("_method"));
 mong.set('useFindAndModify', false);
 app.use(flash());
+<<<<<<< HEAD
 app.use(compression());
+=======
+>>>>>>> 950c1d7d89059814ce45336ad8875ecb53692281
 // seed the database ---> seedDB();
 
 //passport config
